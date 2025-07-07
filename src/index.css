@@ -25,6 +25,66 @@ body {
   width: 100%;
 }
 
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  min-width: 200px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+}
+
+.search-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: background 0.3s ease;
+}
+
+.search-button:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.error {
+  text-align: center;
+  color: #ffb3b3;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: rgba(255, 0, 0, 0.15);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  backdrop-filter: blur(4px);
+}
+
 .weather-header {
   text-align: center;
   margin-bottom: 2rem;
